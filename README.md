@@ -2,6 +2,12 @@
 
 A SvelteKit top loading bar component made using nprogress.
 
+## Demo
+
+Note: you might have to throttle the network speed to see the top loader 😅
+
+[https://sveltekit-top-loader.pages.dev/](https://sveltekit-top-loader.pages.dev/)
+
 ## Installation
 
 Using npm:
