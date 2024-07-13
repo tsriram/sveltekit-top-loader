@@ -58,6 +58,7 @@
 	"types": "./dist/index.d.ts",
 	"type": "module",
 	"dependencies": {
+		"@changesets/cli": "^2.27.7",
 		"nprogress": "^0.2.0"
 	}
 }
