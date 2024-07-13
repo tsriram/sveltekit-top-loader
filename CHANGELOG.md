@@ -1,5 +1,11 @@
 # sveltekit-top-loader
 
+## 0.0.3
+
+### Patch Changes
+
+- 4fb07e5: Updated demo URL in readme and keywords in package.json
+
 ## 0.0.2
 
 ### Patch Changes
