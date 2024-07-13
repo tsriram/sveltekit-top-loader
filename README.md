@@ -1,58 +1,109 @@
-# create-svelte
+# sveltekit-top-loader
 
-Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+A SvelteKit top loading bar component made using nprogress.
 
-Read more about creating a library [in the docs](https://kit.svelte.dev/docs/packaging).
+## Installation
 
-## Creating a project
+Using npm:
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+```sh
+npm install sveltekit-top-loader
 ```
 
-## Developing
+## Usage
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+In your root `+layout.svelte` file, import the component and render it at the top.
 
-```bash
-npm run dev
+```svelte
+<script lang="ts">
+	import { SvelteKitTopLoader } from 'sveltekit-top-loader';
+</script>
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+<div>
+	<SvelteKitTopLoader />
+	<slot />
+</div>
 ```
 
-Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
+## props
 
-## Building
+### color
 
-To build your library:
+Color for the top loader.
 
-```bash
-npm run package
-```
+- Type: `string`
+- Default: `#29d`
 
-To create a production version of your showcase app:
+### minimum
 
-```bash
-npm run build
-```
+The initial position for the top loader in percentage, 0.08 is 8%.
 
-You can preview the production build with `npm run preview`.
+- Type: `number`
+- Default: `0.08`
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+### trickleSpeed
 
-## Publishing
+The increment delay speed in milliseconds.
 
-Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
+- Type: `number`
+- Default: `200`
 
-To publish your library to [npm](https://www.npmjs.com):
+### height
 
-```bash
-npm publish
-```
+The height for the top loader in pixel.
+
+- Type: `number`
+- Default: `3`
+
+### trickle
+
+Auto increamenting behaviour for the top loader.
+
+- Type: `boolean`
+- Default: `true`
+
+### showSpinner
+
+To show spinner or not.
+
+- Type: `boolean`
+- Default: `true`
+
+### easing
+
+Animation settings using easing (a CSS easing string).
+
+- Type: `string`
+- Default: `ease`
+
+### speed
+
+Animation speed in ms for the top loader.
+
+- Type: `number`
+- Default: `200`
+
+### shadow
+
+Shadow for the top loader. You can disable it by setting it to `false`.
+
+- Type: `string | false`
+- Default: `0 0 10px ${color},0 0 5px ${color}`
+
+### template
+
+Template for the top loader.
+
+- Type: `string`
+- Default: `<div class="bar" role="bar"><div class="peg"></div></div><div class="spinner" role="spinner"><div class="spinner-icon"></div></div>`
+
+### zIndex
+
+z-index for the top loader.
+
+- Type: `number`
+- Default: `1600`
+
+## Credits
+
+This library is a port of Next.js top loader. A huge thanks to the creators and contributors of [nextjs-toploader](https://github.com/TheSGJ/nextjs-toploader/) and [nprogress](https://github.com/rstacruz/nprogress).
