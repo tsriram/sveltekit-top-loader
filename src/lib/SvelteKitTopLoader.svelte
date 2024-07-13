@@ -4,12 +4,12 @@
 	import { onMount } from 'svelte';
 
 	/**
-	 * Color for the TopLoader.
+	 * Color for the top loader.
 	 * @default "#29d"
 	 */
 	export let color: string = '#29d';
 	/**
-	 * The initial position for the TopLoader in percentage, 0.08 is 8%.
+	 * The initial position for the top loader in percentage, 0.08 is 8%.
 	 * @default 0.08
 	 */
 	export let minimum: number = 0.08;
@@ -19,12 +19,12 @@
 	 */
 	export let trickleSpeed: number = 200;
 	/**
-	 * The height for the TopLoader in pixels (px).
+	 * The height for the top loader in pixels (px).
 	 * @default 3
 	 */
 	export let height: number = 3;
 	/**
-	 * Auto increamenting behaviour for the TopLoader.
+	 * Auto increamenting behaviour for the top loader.
 	 * @default true
 	 */
 	export let trickle: boolean = true;
@@ -39,25 +39,25 @@
 	 */
 	export let easing: string = 'ease';
 	/**
-	 * Animation speed in ms for the TopLoader.
+	 * Animation speed in ms for the top loader.
 	 * @default 200
 	 */
 	export let speed: number = 200;
 	/**
-	 * Defines a shadow for the TopLoader.
+	 * Defines a shadow for the top loader.
 	 * @default "0 0 10px ${color},0 0 5px ${color}"
 	 *
 	 * @ you can disable it by setting it to `false`
 	 */
 	export let shadow: string | false = `0 0 10px ${color},0 0 5px ${color}`;
 	/**
-	 * Defines a template for the TopLoader.
+	 * Defines a template for the top loader.
 	 * @default "<div class="bar" role="bar"><div class="peg"></div></div>
 	 * <div class="spinner" role="spinner"><div class="spinner-icon"></div></div>"
 	 */
 	export let template: string = `<div class="bar" role="bar"><div class="peg"></div></div><div class="spinner" role="spinner"><div class="spinner-icon"></div></div>`;
 	/**
-	 * Defines zIndex for the TopLoader.
+	 * Defines zIndex for the top loader.
 	 * @default 1600
 	 *
 	 */
