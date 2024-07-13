@@ -2,6 +2,11 @@
 	"name": "sveltekit-top-loader",
 	"version": "0.0.2",
 	"license": "MIT",
+	"author": {
+		"name": "Sriram Thiagarajan",
+		"email": "sri.sjc@gmail.com",
+		"url": "https://x.com/tsriram"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -61,5 +66,13 @@
 	"dependencies": {
 		"@changesets/cli": "^2.27.7",
 		"nprogress": "^0.2.0"
-	}
+	},
+	"keywords": [
+		"Svelte",
+		"SvelteKit",
+		"SvelteKit Top Loader",
+		"Nprogress",
+		"Top Loading Bar",
+		"Progressbar"
+	]
 }
