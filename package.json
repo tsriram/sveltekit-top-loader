@@ -7,6 +7,10 @@
 		"email": "sri.sjc@gmail.com",
 		"url": "https://x.com/tsriram"
 	},
+	"homepage": "https://github.com/tsriram/sveltekit-top-loader",
+	"bugs": {
+		"url": "https://github.com/tsriram/sveltekit-top-loader/issues"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
