@@ -1,5 +1,11 @@
 # sveltekit-top-loader
 
+## 0.0.4
+
+### Patch Changes
+
+- 86ce2f1: Homepage and bugs url in package.json
+
 ## 0.0.3
 
 ### Patch Changes
